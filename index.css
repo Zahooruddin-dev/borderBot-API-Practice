@@ -1,0 +1,81 @@
+/* Dark theme background and styling for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;  /* Ensure text is readable on dark background */
+  overflow: hidden;  /* Prevents scrolling if the content overflows */
+}
+
+/* Container for the centered card */
+.container {
+  background-color: #2c2c3e;
+  padding: 60px;
+  border-radius: 25px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;  /* Ensures text inside the container is centered */
+}
+
+.container:hover {
+  transform: scale(1.05);
+  background-color: #33334d;
+}
+
+/* Styling for the dynamic activity text */
+.activity-text {
+  font-size: 2.5rem;
+  color: #fafafa;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin: 20px 0;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: #50fa7b;
+  transform: translateY(-5px);
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.1rem;
+  color: #bfbfbf;
+  margin-bottom: 40px;
+}
+
+/* Button styling with hover and active states */
+.action-button {
+  background-color: #6272a4;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #50fa7b;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(80, 250, 123, 0.4);
+}
+
+.action-button:active {
+  transform: scale(1);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
