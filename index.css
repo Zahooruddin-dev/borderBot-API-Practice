@@ -55,7 +55,20 @@ body {
   font-size: 1.1rem;
   color: #bfbfbf;
   margin-bottom: 40px;
+}/* Alternative subtitle styling */
+.subtitle-alt {
+  font-size: 1.3rem;               /* Slightly larger font size */
+  color: #9fa8da;                  /* A softer blue color for contrast */
+  margin-bottom: 30px;             /* Slightly less bottom margin */
+  text-transform: uppercase;       /* Text transformed to uppercase */
+  letter-spacing: 1.2px;           /* Increased spacing between letters */
+  transition: color 0.3s ease-in;  /* Smooth transition for color changes */
 }
+
+.subtitle-alt:hover {
+  color: #7986cb;                  /* Darker hover color */
+}
+
 
 /* Button styling with hover and active states */
 .action-button {

@@ -10,6 +10,7 @@ back from the Bored API
       - Change the background to something less drab.
       - Bonus: Animate something on the screen to move around and add more 
         excitement to the page
+        background-color: #434358;
 */
 const btn=document.getElementById('action-button')
 const url='https://apis.scrimba.com/bored/api/activity'
@@ -21,7 +22,7 @@ function activity(){
     document.getElementById('activity-text').innerText=data.activity
     document.getElementById('activity-text').classList='subtitle-alt'
     document.getElementById('bot').innerText='🦾 HappyBot🦿'
-    
+    document.body.style.backgroundColor='#434358'
   })
   
 }
